@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jesus quiahua">
+        <meta name="description" content="proyecto encriptador de texto del
+        curso principiante en programacion de aluralatam">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <h1><img src="imagenes/logo.png" alt="logoletraAdealura"></h1>
+        </header>
+        <main>
+            <div class="textoEncriptar">
+                <section>
+                        <textarea id="textoEncriptar" name="textoEncriptar" placeholder="Ingresa el texto a encriptar"  ></textarea>
+                        <article>
+                        <img src="imagenes/exclamacion.png" alt="logoexclamacion">
+                        <p>solo letras en minuscula y sin acentos</p>
+                        </article>
+                        <aside>
+                        <button onclick="btnEncriptar()" title="boton para Encriptar texto" id="botonEncriptar" >Encriptar</button>
+                        <button onclick="btnDesencriptar()"  title="boton para desencriptar texto"  id="botonDesencriptar" >Desencriptar</button>
+                        </aside>
+                </section>
+            </div>
+            <div class="textoEncriptado">
+                <section>
+                    <textarea name="textoEncriptado"  id="textoEncriptado"  placeholder="Ingresa el texto que desees encriptar o desencriptar." readonly ></textarea>
+                    <h2 class="textoAviso" id="textoAviso">Ningun Mensaje fue encontrado</h2>
+                    <button onclick="btnCopiar()" title="copiar texto encriptado"  id="botonCopiar">Copiar</button>
+                </section>
+            </div>
+        </main>
+        <footer><p>&#169 Elaborado por Jesus&#8482 &#171 Marzo 2024 &#187</p></footer>
+    </body>
+    <script src="app.js"></script>
+</html>
